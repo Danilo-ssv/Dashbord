@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="conteiner">
+		<main>
+			<h1 class="margin">Dashboard</h1>
+			<div class="add-tasks margin">
+				<h3>Adicione uma tarefa...</h3>
+				<button class="e-md" onClick="showModal()">+ Adicionar</button>
+			</div>
+			<div id="tasks-conteiner" class="margin">
+			<!-- <div class="task">
+					<div>
+						<h3>título</h3>
+						<button>X</button>
+					</div>
+					<p>Descrição</p>
+				</div> -->
+			</div>
+		</main>
+	</div>
+
+	<div class="modal-conteiner">
+		<div class="modal e-md">
+			<h3 class="e-md">Crie uma nova tarefa!</h3>
+			<form class="e-md" id="form">
+				<input type="text" class="e-md" id="title" placeholder="Título" autofocus="true" required>
+				<input type="text" class="e-md" id="description" placeholder="Descrição" required>
+				<input type="submit" class="e-md" id="submit" value="Criar!">
+			</form>
+			<button>X</button>
+		</div>
+	</div>
+
+    <!-- SCRIPTS -->
+
+    <script src="scripts/render.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
